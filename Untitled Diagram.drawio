@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-05-30T11:18:57.192Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="S5ggkjNUa7Uv8yCjlzV-" version="14.5.10" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-30T15:18:06.722Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36" etag="m3jN5xedE0WKDJHxzVEY" version="14.5.10" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
-    <mxGraphModel dx="1808" dy="1178" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1064" dy="693" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -59,6 +59,60 @@
         </mxCell>
         <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-19" value="@黄彬 处理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
           <mxGeometry x="140" y="650" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Xdrb1TJ8sYdwbjvWpWTI-20" target="Xdrb1TJ8sYdwbjvWpWTI-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-20" value="前台传入对应server块" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="800" y="40" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Xdrb1TJ8sYdwbjvWpWTI-21" target="Xdrb1TJ8sYdwbjvWpWTI-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-21" value="server名称+存储的nginx配置调用解析api" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="800" y="120" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Xdrb1TJ8sYdwbjvWpWTI-22" target="Xdrb1TJ8sYdwbjvWpWTI-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-22" value="解析通过名称查找含有对应注释的server块" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="800" y="280" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Xdrb1TJ8sYdwbjvWpWTI-23" target="Xdrb1TJ8sYdwbjvWpWTI-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-23" value="返回给到前台，显示数据" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="800" y="440" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-24" value="结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="800" y="610" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-29" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="80" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-30" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;@黄彬 处理&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="115" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-31" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="280" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-32" value="@龙文浩 处理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="135" y="390" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-33" value="@龙文浩 处理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580" y="320" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-34" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="70" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-35" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="440" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-36" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;@黄彬 处理&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="115" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Xdrb1TJ8sYdwbjvWpWTI-37" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;@黄彬 处理&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="475" width="90" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
